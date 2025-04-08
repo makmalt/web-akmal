@@ -3,7 +3,7 @@ import DecryptedText from "../elements/DecryptedText";
 
 const IsiBio = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen mt-64">
+    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen mt-44">
       <div className="columns-2 flex flex-col mx-20">
         <SplitText
           text="Mochammad Akmal Thoriq"
@@ -30,7 +30,9 @@ const IsiBio = () => {
         />
         <a href="http://">Download CV</a>
       </div>
-      <div className="text-white text-2xl justify-center">Hai</div>
+      <div className="text-white text-2xl mx-20 self-start justify-center text-center md:text-left">
+        Hai Aku akmal
+      </div>
     </div>
   );
 };
