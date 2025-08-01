@@ -1,7 +1,14 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
 @tailwind utilities;
 @plugin "daisyui";
 
 body {
     @apply bg-black
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

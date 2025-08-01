@@ -1,19 +1,21 @@
 import SplitText from "../elements/SplitText";
 import DecryptedText from "../elements/DecryptedText";
+import TiltedCard from "../elements/TiltedCard";
+import AnimatedContent from "../elements/AnimatedContent";
+import TextType from "../elements/TextType";
 
 const IsiBio = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen mt-44">
+    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center justify-center">
       <div className="columns-2 flex flex-col mx-20">
-        <SplitText
-          text="Mochammad Akmal Thoriq"
+        <TextType
+          text={["Mochammad Akmal Thoriq", "Akmal"]}
           className="text-4xl text-white font-bold pb-5 self-start"
-          delay={130}
-          animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-          animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-          easing="easeOutCubic"
-          threshold={0.2}
-          rootMargin="-50px"
+          typingSpeed={100}
+          pauseDuration={1500}
+          showCursor={true}
+          deletingSpeed={60}
+          cursorCharacter="|"
         />
         <DecryptedText
           text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, maiores quo perferendis nesciunt deserunt esse laudantium! Error, suscipit. Non velit sunt voluptatem, animi fugit a sapiente aliquid. Veniam, ipsam debitis."
@@ -28,11 +30,36 @@ const IsiBio = () => {
           revealDirection="start"
           sequential="true"
         />
-        <a href="http://">Download CV</a>
+        <a className="link text-2xl mt-10 mb-10 lg:mb-0">Download CV</a>
       </div>
-      <div className="text-white text-2xl mx-20 self-start justify-center text-center md:text-left">
-        Hai Aku akmal
-      </div>
+      <AnimatedContent
+        distance={200}
+        reverse={false}
+        direction={"horizontal"}
+        config={{ tension: 80, friction: 20 }}
+        initialOpacity={0}
+        animateOpacity
+        scale={1.1}
+        threshold={0.2}
+        delay={0}
+      >
+        <div className="flex items-baseline justify-center">
+          <TiltedCard
+            imageSrc="fotobio.jpg"
+            altText=" Foto bio"
+            captionText="Foto Akmal"
+            containerHeight="400px"
+            containerWidth="400px"
+            imageHeight="400px"
+            imageWidth="400px"
+            rotateAmplitude={12}
+            scaleOnHover={1.2}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+          />
+        </div>
+      </AnimatedContent>
     </div>
   );
 };
