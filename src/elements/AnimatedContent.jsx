@@ -12,6 +12,7 @@ const AnimatedContent = ({
   animateOpacity = true,
   scale = 1,
   threshold = 0.1,
+  delay = 0
 }) => {
   const [inView, setInView] = useState(false);
   const ref = useRef();
@@ -22,8 +23,10 @@ const AnimatedContent = ({
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setInView(true);
           observer.unobserve(ref.current);
+          setTimeout(() => {
+            setInView(true);
+          }, delay);
         }
       },
       { threshold }
@@ -32,7 +35,7 @@ const AnimatedContent = ({
     observer.observe(ref.current);
 
     return () => observer.disconnect();
-  }, [threshold]);
+  }, [threshold, delay]);
 
   const directions = {
     vertical: "Y",

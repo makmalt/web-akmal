@@ -6,7 +6,7 @@ const Isi = () => {
   return (
     <div className="flex flex-col items-center">
       <BlurText
-        text="Project"
+        text="Skills"
         delay={150}
         animateBy="words"
         direction="top"
