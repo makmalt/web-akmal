@@ -6,7 +6,7 @@ const Hero = () => {
       <Background></Background>
       <div style={{ position: "relative", height: "300px" }}>
         <TextPressure
-          text="Ahlan!"
+          text="Ahlan"
           flex={true}
           alpha={false}
           stroke={false}
