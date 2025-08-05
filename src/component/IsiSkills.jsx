@@ -1,0 +1,154 @@
+import BlurText from "../elements/BlurText";
+import AnimatedContent from "../elements/AnimatedContent";
+import PixelTransition from "../elements/PixelTransition";
+import { SiReact, SiLaravel, SiDotnet } from "react-icons/si";
+import Marquee from "react-fast-marquee";
+
+const IsiSkills = () => {
+  return (
+    <div className="flex flex-col items-center">
+      <BlurText
+        text="Skills"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        className="text-7xl mb-20 font-bold text-white"
+      />
+      <div className="hidden md:block overflow-hidden w-full">
+        <Marquee
+          gradient={false}
+          speed={60}
+          autoFill={true}
+          pauseOnHover={false}
+          loop={0} // infinite
+        >
+          <div className="md:flex grid">
+            <PixelTransition
+              firstContent={
+                <div className="flex items-center justify-center h-full">
+                  <SiLaravel color="#FF2D20" size={200} />
+                </div>
+              }
+              secondContent={
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "grid",
+                    placeItems: "center",
+                    backgroundColor: "#111",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "3rem",
+                      color: "#ffffff",
+                    }}
+                  >
+                    Laravel
+                  </p>
+                </div>
+              }
+              gridSize={12}
+              pixelColor="#ffffff"
+              animationStepDuration={0.4}
+              href=""
+              className="mx-8"
+            />
+            <PixelTransition
+              firstContent={
+                <div className="flex items-center justify-center h-full">
+                  <SiReact color="#61DAFB" size={200} />
+                </div>
+              }
+              secondContent={
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "grid",
+                    placeItems: "center",
+                    backgroundColor: "#111",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "3rem",
+                      color: "#ffffff",
+                    }}
+                  >
+                    React.Js
+                  </p>
+                </div>
+              }
+              gridSize={12}
+              pixelColor="#ffffff"
+              animationStepDuration={0.4}
+              href=""
+              className="mx-8"
+            />
+
+            <PixelTransition
+              firstContent={
+                <div className="flex items-center justify-center h-full">
+                  <SiDotnet color="#512BD4" size={200} />
+                </div>
+              }
+              secondContent={
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "grid",
+                    placeItems: "center",
+                    backgroundColor: "#111",
+                  }}
+                >
+                  <a
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "3rem",
+                      color: "#ffffff",
+                    }}
+                  >
+                    .NET
+                  </a>
+                </div>
+              }
+              gridSize={12}
+              pixelColor="#ffffff"
+              animationStepDuration={0.4}
+              href=""
+              className="mx-8"
+            />
+          </div>
+        </Marquee>
+      </div>
+
+      {/* Untuk sm ke bawah (opsional) tampilkan alternatif */}
+      <div className="md:hidden w-full justify-items-center">
+        <div className="grid grid-cols-1">
+          <AnimatedContent
+            distance={100}
+            reverse={false}
+            direction={"horizontal"}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0}
+            className=""
+          >
+            <SiLaravel color="#FF2D20" size={150} className="m-10" />
+            <SiReact color="#61DAFB" size={150} className="m-10" />
+            <SiDotnet color="#512BD4" size={150} className="m-10" />
+          </AnimatedContent>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default IsiSkills;
