@@ -128,7 +128,7 @@ const IsiSkills = () => {
       </div>
 
       {/* Untuk sm ke bawah (opsional) tampilkan alternatif */}
-      <div className="mb-0 md:hidden w-full justify-items-center">
+      <div className="mb-0 md:hidden w-full justify-items-center justify-center items-center">
         <div className="grid grid-cols-1">
           <AnimatedContent
             distance={100}
