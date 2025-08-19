@@ -8,11 +8,11 @@ const IsiSkills = () => {
   return (
     <div className="flex flex-col items-center">
       <BlurText
-        text="Skills"
+        text="Skill"
         delay={150}
         animateBy="words"
         direction="top"
-        className="text-7xl mb-20 font-bold text-white"
+        className="m-10 text-4xl md:text-5xl md:mb-20 font-bold text-white"
       />
       <div className="hidden md:block overflow-hidden w-full">
         <Marquee
@@ -26,7 +26,7 @@ const IsiSkills = () => {
             <PixelTransition
               firstContent={
                 <div className="flex items-center justify-center h-full">
-                  <SiLaravel color="#FF2D20" size={200} />
+                  <SiLaravel color="#FF2D20" size={100} />
                 </div>
               }
               secondContent={
@@ -59,7 +59,7 @@ const IsiSkills = () => {
             <PixelTransition
               firstContent={
                 <div className="flex items-center justify-center h-full">
-                  <SiReact color="#61DAFB" size={200} />
+                  <SiReact color="#61DAFB" size={100} />
                 </div>
               }
               secondContent={
@@ -93,7 +93,7 @@ const IsiSkills = () => {
             <PixelTransition
               firstContent={
                 <div className="flex items-center justify-center h-full">
-                  <SiDotnet color="#512BD4" size={200} />
+                  <SiDotnet color="#512BD4" size={100} />
                 </div>
               }
               secondContent={
@@ -128,7 +128,7 @@ const IsiSkills = () => {
       </div>
 
       {/* Untuk sm ke bawah (opsional) tampilkan alternatif */}
-      <div className="md:hidden w-full justify-items-center">
+      <div className="mb-0 md:hidden w-full justify-items-center">
         <div className="grid grid-cols-1">
           <AnimatedContent
             distance={100}
@@ -142,9 +142,9 @@ const IsiSkills = () => {
             delay={0}
             className=""
           >
-            <SiLaravel color="#FF2D20" size={150} className="m-10" />
-            <SiReact color="#61DAFB" size={150} className="m-10" />
-            <SiDotnet color="#512BD4" size={150} className="m-10" />
+            <SiLaravel color="#FF2D20" size={120} className="m-10 " />
+            <SiReact color="#61DAFB" size={120} className="m-10" />
+            <SiDotnet color="#512BD4" size={120} className="m-10" />
           </AnimatedContent>
         </div>
       </div>

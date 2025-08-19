@@ -2,7 +2,7 @@ import TextPressure from "../elements/TextPressure";
 import Background from "./Background";
 const Hero = () => {
   return (
-    <div className="justify-center flex flex-col min-h-screen items-center">
+    <div className="hidden md:justify-center md:flex flex-col min-h-screen items-center">
       <Background></Background>
       <div style={{ position: "relative", height: "300px" }}>
         <TextPressure
