@@ -20,8 +20,8 @@ export default function NavbarComponent() {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLinkScroll to="home">Home</NavbarLinkScroll>
-        <NavbarLinkScroll to="skills">Skills</NavbarLinkScroll>
+        <NavbarLinkScroll to="about">About</NavbarLinkScroll>
+        <NavbarLinkScroll to="portfolio">Portfolio</NavbarLinkScroll>
         <NavbarLinkScroll to="contact">Contact</NavbarLinkScroll>
       </NavbarCollapse>
     </Navbar>

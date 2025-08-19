@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 function PixelTransition({
   firstContent,
   secondContent,
-  gridSize = 7,
+  gridSize = 10,
   pixelColor = "currentColor",
   animationStepDuration = 0.3,
   className = "custom-pixel-card my-4",
@@ -115,7 +115,7 @@ function PixelTransition({
         rounded-[15px]
         border-2
         border-white
-        w-[300px]
+        w-[200px]
         max-w-full
         relative
         overflow-hidden
