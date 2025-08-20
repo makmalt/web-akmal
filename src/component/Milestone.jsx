@@ -2,43 +2,15 @@ import { motion } from "framer-motion";
 import { FiBookOpen, FiCode, FiAward } from "react-icons/fi";
 import { FaLaptopCode, FaUserGraduate } from "react-icons/fa";
 import BlurText from "../elements/BlurText";
+import { useEffect, useState } from "react";
 
-const milestones = [
-  {
-    id: 1,
-    year: "2021",
-    title: "Graduated from High School — MBI Amanatul Ummah",
-    place: "Mojokerto, ID",
-    description: "Wrapped up high school and started exploring the tech world.",
-    icon: FaUserGraduate,
-  },
-  {
-    id: 2,
-    year: "2021",
-    title: "Started Informatics Engineering at Universitas Brawijaya",
-    place: "Malang, ID",
-    description:
-      "Began studying Computer Science, explored multiple programming languages and frameworks, and developed several projects to strengthen my skills.",
-    icon: FiBookOpen,
-  },
-  {
-    id: 3,
-    year: "2024",
-    title: "Internship at Kalbe — Web Developer",
-    place: "Jakarta, ID",
-    description:
-      "Worked as full-stack web developer (ASP.NET + SQL Server). Delivered clinic digitalization web.",
-    icon: FaLaptopCode,
-  },
-  {
-    id: 4,
-    year: "2025",
-    title: "Graduated — S1 Informatics",
-    place: "Universitas Brawijaya",
-    description: "Finished degree with focus on web development.",
-    icon: FiAward,
-  },
-];
+const iconMap = {
+  FaLaptopCode: FaLaptopCode,
+  FiBookOpen: FiBookOpen,
+  FiCode: FiCode,
+  FiAward: FiAward,
+  FaUserGraduate: FaUserGraduate,
+};
 
 const container = {
   hidden: { opacity: 0 },
@@ -78,7 +50,18 @@ function Card({ year, title, place, description }) {
   );
 }
 
-export default function Milestones({ data = milestones }) {
+export default function Milestones() {
+  const [milestones, setMilestones] = useState([]);
+  useEffect(() => {
+    // Fetching data from an API or local JSON
+    const fetchMilestones = async () => {
+      const response = await fetch("/milestone.json");
+      const data = await response.json();
+      setMilestones(data);
+    };
+
+    fetchMilestones();
+  }, []);
   return (
     <section className="max-w-full mx-auto md:max-w-3/5 px-4 py-12">
       <div className="mb-8 flex flex-col items-center justify-center">
@@ -106,8 +89,8 @@ export default function Milestones({ data = milestones }) {
         {/* vertical line */}
         <div className="pointer-events-none absolute left-5 top-0 h-full w-px bg-gradient-to-b from-transparent via-slate-300 to-transparent dark:via-slate-700" />
 
-        {data.map((m) => {
-          const Icon = m.icon || LaptopMinimal;
+        {milestones.map((m) => {
+          const Icon = iconMap[m.icon] || FiBookOpen; // Default icon if not found
           return (
             <motion.li
               key={m.id}
