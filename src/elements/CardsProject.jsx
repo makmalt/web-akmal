@@ -1,87 +1,88 @@
 "use client";
 import { Icon } from "@iconify/react";
 
+const iconMap1 = {
+  React: (
+    <span title="React">
+      <Icon icon="logos:react" className="w-11 h-11" />
+    </span>
+  ),
+  Laravel: (
+    <span title="Laravel">
+      <Icon icon="logos:laravel" className="w-11 h-11" />
+    </span>
+  ),
+  ".NET": (
+    <span title=".NET">
+      <Icon icon="logos:dotnet" className="w-11 h-11" />
+    </span>
+  ),
+  Tailwind: (
+    <span title="Tailwind CSS">
+      <Icon icon="logos:tailwindcss-icon" className="w-11 h-11" />
+    </span>
+  ),
+  MySQL: (
+    <span title="MySQL">
+      <Icon icon="logos:mysql" className="w-11 h-11" />
+    </span>
+  ),
+  Bootstrap: (
+    <span title="Bootstrap">
+      <Icon icon="logos:bootstrap" className="w-11 h-11" />
+    </span>
+  ),
+  Astro: (
+    <span title="Astro.JS">
+      <Icon icon="logos:astro-icon" className="w-11 h-11" title="Astro.js" />
+    </span>
+  ),
+  Alpine: (
+    <span title="Alpine.JS">
+      <Icon
+        icon="logos:alpinejs-icon"
+        className="w-11 h-11"
+        title="Alpine.js"
+      />
+    </span>
+  ),
+  SqlServer: (
+    <span title="SQL Server">
+      <Icon icon="logos:microsoft-icon" className="w-11 h-11" />
+    </span>
+  ),
+  Flutter: (
+    <span title="Flutter">
+      <Icon icon="logos:flutter" className="w-11 h-11" />
+    </span>
+  ),
+  Kotlin: (
+    <span title="Kotlin">
+      <Icon icon="logos:kotlin-icon" className="w-11 h-11" />
+    </span>
+  ),
+  Firebase: (
+    <span title="Firebase">
+      <Icon icon="logos:firebase-icon" className="w-11 h-11" />
+    </span>
+  ),
+};
+const iconMap2 = {
+  React: <Icon icon="logos:react" className="w-8 h-8" />,
+  Laravel: <Icon icon="logos:laravel" className="w-8 h-8" />,
+  ".NET": <Icon icon="logos:dotnet" className="w-8 h-8" />,
+  Tailwind: <Icon icon="logos:tailwindcss-icon" className="w-8 h-8" />,
+  MySQL: <Icon icon="logos:mysql" className="w-8 h-8" />,
+  Bootstrap: <Icon icon="logos:bootstrap" className="w-8 h-8" />,
+  Alpine: <Icon icon="logos:alpinejs-icon" className="w-8 h-8" />,
+  Astro: <Icon icon="logos:astro-icon" className="w-8 h-8" />,
+  SqlServer: <Icon icon="logos:microsoft-icon" className="w-8 h-8" />,
+  Flutter: <Icon icon="logos:flutter" className="w-8 h-8" />,
+  Kotlin: <Icon icon="logos:kotlin-icon" className="w-8 h-8" />,
+  Firebase: <Icon icon="logos:firebase-icon" className="w-8 h-8" />,
+};
+
 const CardsProject = ({ image, title, description, link, techstack }) => {
-  const iconMap1 = {
-    React: (
-      <span title="React">
-        <Icon icon="logos:react" className="w-11 h-11" />
-      </span>
-    ),
-    Laravel: (
-      <span title="Laravel">
-        <Icon icon="logos:laravel" className="w-11 h-11" />
-      </span>
-    ),
-    ".NET": (
-      <span title=".NET">
-        <Icon icon="logos:dotnet" className="w-11 h-11" />
-      </span>
-    ),
-    Tailwind: (
-      <span title="Tailwind CSS">
-        <Icon icon="logos:tailwindcss-icon" className="w-11 h-11" />
-      </span>
-    ),
-    MySQL: (
-      <span title="MySQL">
-        <Icon icon="logos:mysql" className="w-11 h-11" />
-      </span>
-    ),
-    Bootstrap: (
-      <span title="Bootstrap">
-        <Icon icon="logos:bootstrap" className="w-11 h-11" />
-      </span>
-    ),
-    Astro: (
-      <span title="Astro.JS">
-        <Icon icon="logos:astro-icon" className="w-11 h-11" title="Astro.js" />
-      </span>
-    ),
-    Alpine: (
-      <span title="Alpine.JS">
-        <Icon
-          icon="logos:alpinejs-icon"
-          className="w-11 h-11"
-          title="Alpine.js"
-        />
-      </span>
-    ),
-    SqlServer: (
-      <span title="SQL Server">
-        <Icon icon="logos:microsoft-icon" className="w-11 h-11" />
-      </span>
-    ),
-    Flutter: (
-      <span title="Flutter">
-        <Icon icon="logos:flutter" className="w-11 h-11" />
-      </span>
-    ),
-    Kotlin: (
-      <span title="Kotlin">
-        <Icon icon="logos:kotlin-icon" className="w-11 h-11" />
-      </span>
-    ),
-    Firebase: (
-      <span title="Firebase">
-        <Icon icon="logos:firebase-icon" className="w-11 h-11" />
-      </span>
-    ),
-  };
-  const iconMap2 = {
-    React: <Icon icon="logos:react" className="w-8 h-8" />,
-    Laravel: <Icon icon="logos:laravel" className="w-8 h-8" />,
-    ".NET": <Icon icon="logos:dotnet" className="w-8 h-8" />,
-    Tailwind: <Icon icon="logos:tailwindcss-icon" className="w-8 h-8" />,
-    MySQL: <Icon icon="logos:mysql" className="w-8 h-8" />,
-    Bootstrap: <Icon icon="logos:bootstrap" className="w-8 h-8" />,
-    Alpine: <Icon icon="logos:alpinejs-icon" className="w-8 h-8" />,
-    Astro: <Icon icon="logos:astro-icon" className="w-8 h-8" />,
-    SqlServer: <Icon icon="logos:microsoft-icon" className="w-8 h-8" />,
-    Flutter: <Icon icon="logos:flutter" className="w-8 h-8" />,
-    Kotlin: <Icon icon="logos:kotlin-icon" className="w-8 h-8" />,
-    Firebase: <Icon icon="logos:firebase-icon" className="w-8 h-8" />,
-  };
   return (
     <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-md overflow-hidden h-140 relative">
       {/* Image */}
