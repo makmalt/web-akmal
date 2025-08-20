@@ -82,7 +82,7 @@ const IsiBio = () => {
         />
         <div className="mx-auto md:w-4xl text-justify">
           <DecryptedText
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, maiores quo perferendis nesciunt deserunt esse laudantium! Error, suscipit. Non velit sunt voluptatem, animi fugit a sapiente aliquid. Veniam, ipsam debitis."
+            text="Hi, Iam a fresh graduate in Informatics Engineering from Brawijaya University with experience and strong interest in software development, both as front-end and back-end developer, especially has a very high enthusiasm for front-end development. Have experience in creating web applications, slicing ui/ux, mobile applications, and making an analysis before developing software. Enjoys learning things, such as learning new programming languages and frameworks. "
             speed={10}
             maxIterations={30}
             characters="ABCD1234!?"
@@ -97,7 +97,9 @@ const IsiBio = () => {
           <br />
           <br />
           <br />
-          <a className="link text-2xl mt-10 mb-10 lg:mb-0">Download CV</a>
+          <a className="text-white dark:text-white link text-2xl mt-10 mb-10 lg:mb-0">
+            Download CV
+          </a>
         </div>
       </div>
     </div>

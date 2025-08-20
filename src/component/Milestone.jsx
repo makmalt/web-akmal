@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { FiBookOpen, FiCode, FiAward } from "react-icons/fi";
 import { FaLaptopCode, FaUserGraduate } from "react-icons/fa";
@@ -27,8 +28,8 @@ const item = {
 
 function Dot({ Icon }) {
   return (
-    <div className="relative z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white shadow ring-2 ring-slate-200 dark:bg-slate-900 dark:ring-slate-700">
-      <Icon className="h-5 w-5" />
+    <div className="relative z-10 inline-flex h-10 w-10 items-center justify-center rounded-full shadow ring-2 bg-slate-900 ring-slate-700">
+      <Icon className="h-5 w-5" color="white" />
     </div>
   );
 }
@@ -36,15 +37,15 @@ function Dot({ Icon }) {
 function Card({ year, title, place, description }) {
   return (
     <div className="ml-6 w-full">
-      <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-900">
+      <div className="rounded-2xl border   p-4 shadow-sm border-slate-700 bg-slate-900">
         <div className="flex flex-wrap items-center gap-2 text-sm">
-          <span className="rounded-full bg-slate-100 px-2 py-0.5 font-medium dark:bg-slate-800">
+          <span className="rounded-full px-2 py-0.5 font-medium bg-slate-800 text-white">
             {year}
           </span>
           {place && <span className="text-slate-500">{place}</span>}
         </div>
-        <h3 className="mt-2 text-lg font-semibold leading-tight">{title}</h3>
-        <p className="mt-2 text-slate-600 dark:text-slate-300">{description}</p>
+        <h3 className="mt-2 text-lg font-semibold leading-tight text-white">{title}</h3>
+        <p className="mt-2 text-slate-300">{description}</p>
       </div>
     </div>
   );
@@ -74,9 +75,7 @@ export default function Milestones() {
             className="text-4xl md:text-4xl font-bold text-white flex"
           />
         </div>
-        <p className="text-slate-600 dark:text-slate-300">
-          A quick timeline of how I got here.
-        </p>
+        <p className="text-slate-300">A quick timeline of how I got here.</p>
       </div>
 
       {/* Timeline */}
@@ -87,7 +86,7 @@ export default function Milestones() {
         className="relative grid gap-8"
       >
         {/* vertical line */}
-        <div className="pointer-events-none absolute left-5 top-0 h-full w-px bg-gradient-to-b from-transparent via-slate-300 to-transparent dark:via-slate-700" />
+        <div className="pointer-events-none absolute left-5 top-0 h-full w-px bg-gradient-to-b from-transparent to-transparent via-slate-700" />
 
         {milestones.map((m) => {
           const Icon = iconMap[m.icon] || FiBookOpen; // Default icon if not found

@@ -11,8 +11,8 @@ export default function NavbarLinkScroll({ to, children }) {
       offset={-80}
       duration={500}
       spy={true}
-      activeClass="text-white underline font-bold"
-      className="text-lg lg:text-xl cursor-pointer font-mono"
+      activeClass="dark:text-white text-white underline font-bold"
+      className="dark:text-gray-200 text-gray-200 text-lg lg:text-xl cursor-pointer font-mono"
     >
       {children}
     </NavbarLink>
