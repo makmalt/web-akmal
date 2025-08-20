@@ -1,18 +1,19 @@
 import {
-  Button,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
-  NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
 import NavbarLinkScroll from "../elements/NavbarLinkScroll";
 
 export default function NavbarComponent() {
   return (
-    <Navbar rounded className="sticky top-0 z-50 mb-5 lg:mb-0">
+    <Navbar
+      rounded
+      className="bg-slate-900 dark:bg-slate-900 sticky top-0 z-50 mb-5 lg:mb-0 text-white"
+    >
       <NavbarBrand href="https://flowbite-react.com">
-        <span className="flex text-2xl p-2.5 font-semibold dark:text-white font-mono">
+        <span className="flex text-2xl p-2.5 font-semibold text-white font-mono">
           makmalth
         </span>
       </NavbarBrand>

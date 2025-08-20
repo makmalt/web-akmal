@@ -21,15 +21,15 @@
     "year": "2024",
     "title": "Internship at Kalbe — Web Developer",
     "place": "Jakarta, ID",
-    "":
+    "description":
       "Worked as full-stack web developer (ASP.NET + SQL Server). Delivered clinic digitalization web.",
     "icon": "FaLaptopCode"
   },
   {
     "id": 4,
     "year": "2025",
-    "title": "Graduated — S1 Informatics",
-    "place": "Universitas Brawijaya",
+    "title": "Graduated — Bachelor of Informatics (S1) Brawijaya University",
+    "place": "Malang, ID",
     "description": "Finished degree with focus on web development.",
     "icon": "FiAward"
   }

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 "use client";
 import { Icon } from "@iconify/react";
 
@@ -84,7 +85,7 @@ const iconMap2 = {
 
 const CardsProject = ({ image, title, description, link, techstack }) => {
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-md overflow-hidden h-140 relative">
+    <div className="bg-slate-900 rounded-2xl shadow-md overflow-hidden h-140 relative">
       {/* Image */}
       <div className="h-1/2 relative">
         <img src={image} alt={title} className="w-full h-full object-cover" />
@@ -92,7 +93,7 @@ const CardsProject = ({ image, title, description, link, techstack }) => {
 
       {/* Content */}
       <div className="p-4 flex flex-col gap-2">
-        <h5 className="text-xl font-semibold text-gray-900 dark:text-white">
+        <h5 className="text-xl font-semiboldtext-white">
           {title}
         </h5>
         <div className="w-full h-1/3">
