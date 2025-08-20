@@ -21,7 +21,7 @@
             {"id":2, "name":"SqlServer"},
             {"id":3, "name":"Bootstrap"}
         ],
-        "link": "#" 
+        "link": "https://github.com/makmalt/ClinicDataCenter" 
     },
     {
         "id": 3,
@@ -34,7 +34,7 @@
             {"id":3, "name":"Bootstrap"},
             {"id":4, "name":"Flutter"}
         ],
-        "link": "#"
+        "link": "https://github.com/makmalt/mobilepos_app"
     },
     {
         "id":4,
@@ -45,7 +45,7 @@
             {"id":1, "name":"Kotlin"},
             {"id":2, "name":"Firebase"}
         ],
-        "link": "#"
+        "link": "https://github.com/makmalt/AcadeMate-fix"
     },
     {
         "id":5,
@@ -57,7 +57,7 @@
             {"id":2, "name":"MySQL"},
             {"id":3, "name":"Bootstrap"}
         ],
-        "link": "#"
+        "link": "https://github.com/makmalt/project-web"
     }
 
 ]
