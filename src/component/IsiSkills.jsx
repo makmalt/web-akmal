@@ -1,7 +1,7 @@
 import BlurText from "../elements/BlurText";
 import AnimatedContent from "../elements/AnimatedContent";
 import PixelTransition from "../elements/PixelTransition";
-import { SiReact, SiLaravel, SiDotnet } from "react-icons/si";
+import { SiReact, SiLaravel, SiDotnet, SiMysql } from "react-icons/si";
 import Marquee from "react-fast-marquee";
 
 const IsiSkills = () => {
@@ -115,6 +115,39 @@ const IsiSkills = () => {
                   >
                     .NET
                   </a>
+                </div>
+              }
+              gridSize={12}
+              pixelColor="#ffffff"
+              animationStepDuration={0.4}
+              href=""
+              className="mx-8"
+            />
+            <PixelTransition
+              firstContent={
+                <div className="flex items-center justify-center h-full">
+                  <SiMysql color="#4479A1" size={100} />
+                </div>
+              }
+              secondContent={
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    display: "grid",
+                    placeItems: "center",
+                    backgroundColor: "#111",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontWeight: 900,
+                      fontSize: "3rem",
+                      color: "#ffffff",
+                    }}
+                  >
+                    MySQL
+                  </p>
                 </div>
               }
               gridSize={12}

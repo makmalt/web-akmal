@@ -2,6 +2,7 @@ import DecryptedText from "../elements/DecryptedText";
 import TiltedCard from "../elements/TiltedCard";
 import AnimatedContent from "../elements/AnimatedContent";
 import TextType from "../elements/TextType";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const IsiBio = () => {
   return (
@@ -83,7 +84,7 @@ const IsiBio = () => {
         <div className="mx-auto md:w-4xl text-justify">
           <DecryptedText
             text="Hi, Iam a fresh graduate in Informatics Engineering from Brawijaya University with experience and strong interest in software development, both as front-end and back-end developer, especially has a very high enthusiasm for front-end development. Have experience in creating web applications, slicing ui/ux, mobile applications, and making an analysis before developing software. Enjoys learning things, such as learning new programming languages and frameworks. "
-            speed={10}
+            speed={2}
             maxIterations={30}
             characters="ABCD1234!?"
             className="revealed text-white text-xl text-wrap"
@@ -97,9 +98,29 @@ const IsiBio = () => {
           <br />
           <br />
           <br />
-          <a className="text-white dark:text-white link text-2xl mt-10 mb-10 lg:mb-0">
-            Download CV
-          </a>
+          <div className="flex gap-10">
+            <a
+              className="text-white dark:text-white link text-2xl lg:mb-0"
+              href="Cv.pdf"
+              download
+            >
+              Download CV
+            </a>
+            <a
+              href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsGithub className="w-7 h-7 mt-1"></BsGithub>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mochammad-akmal-thoriq/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsLinkedin className="w-7 h-7 mt-1"></BsLinkedin>
+            </a>
+          </div>
         </div>
       </div>
     </div>
