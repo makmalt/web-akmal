@@ -5,6 +5,7 @@ import IsiSkills from "./component/IsiSkills";
 import NavbarComponent from "./component/NavbarComponent";
 import FooterComponent from "./component/FooterComponent";
 import Project from "./component/Project";
+import Contact from "./component/Contact";
 function App() {
   return (
     <>
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div id="skills" className="md:mt-10 lg:mt-0 min-h-auto mb-5">
         <IsiSkills />
+      </div>
+      <div id="contact" className="md:mt-10 lg:mt-0 min-h-auto mb-5">
+        <Contact />
       </div>
       <FooterComponent />
     </>
