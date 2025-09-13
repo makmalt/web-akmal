@@ -1,4 +1,3 @@
-import DecryptedText from "../elements/DecryptedText";
 import TiltedCard from "../elements/TiltedCard";
 import AnimatedContent from "../elements/AnimatedContent";
 import TextType from "../elements/TextType";
@@ -82,19 +81,29 @@ const IsiBio = () => {
           cursorCharacter="|"
         />
         <div className="mx-auto md:w-4xl text-justify">
-          <DecryptedText
-            text="Hi, Iam a fresh graduate in Informatics Engineering from Brawijaya University with experience and strong interest in software development, both as front-end and back-end developer, especially has a very high enthusiasm for front-end development. Have experience in creating web applications, slicing ui/ux, mobile applications, and making an analysis before developing software. Enjoys learning things, such as learning new programming languages and frameworks. "
-            speed={2}
-            maxIterations={30}
-            characters="ABCD1234!?"
-            className="revealed text-white text-xl text-wrap"
-            parentClassName="all-letters"
-            encryptedClassName="encrypted text-white"
-            decryptingClassName="text-white text-2xl"
-            animateOn="view"
-            revealDirection="start"
-            sequential="true"
-          />
+          <AnimatedContent
+            distance={200}
+            reverse={false}
+            direction={"vertical"}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={4}
+          >
+            <div className="text-white dark:text-white text-wrap text-xl">
+              <p>
+                Hi, Iam a fresh graduate in Informatics Engineering from
+                Brawijaya University with experience and strong interest in
+                software development, both as front-end and back-end developer,
+                especially has a very high enthusiasm for front-end development.
+                Have 2+ year experience in developing web application. Enjoys
+                learning things, such as learning new programming languages and
+                frameworks.
+              </p>
+            </div>
+          </AnimatedContent>
           <br />
           <br />
           <br />
