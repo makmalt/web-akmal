@@ -22,7 +22,7 @@ const IsiBio = () => {
           <div className="flex items-baseline justify-center">
             <TiltedCard
               imageSrc="fotobio.jpg"
-              altText=" Foto bio"
+              altText=" Foto Mochammad Akmal Thoriq"
               captionText="Foto Akmal"
               containerHeight="400px"
               containerWidth="400px"
