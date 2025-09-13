@@ -41,6 +41,7 @@ function App() {
         <div id="contact" className="md:mt-10 lg:mt-0 min-h-auto mb-5">
           <Contact />
         </div>
+        <FooterComponent />
       </div>
     </>
   );
