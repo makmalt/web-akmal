@@ -30,12 +30,13 @@ function App() {
         {/* Konten setelah Hero */}
         <div id="about" className="md:mt-2 md:min-h-screen">
           <IsiBio />
+          <Milestones />
         </div>
-        <Milestones />
+
         <div id="portfolio" className="md:mt-0 lg:mt-0 min-h-screen">
           <Project />
         </div>
-        <div id="skills" className="md:mt-10 lg:mt-0 min-h-auto mb-5">
+        <div id="skills" className="md:mt-10 lg:mt-0 min-h-auto mb-20">
           <IsiSkills />
         </div>
         <div id="contact" className="md:mt-10 lg:mt-0 min-h-auto mb-5">
