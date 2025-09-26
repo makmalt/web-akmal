@@ -23,7 +23,7 @@ const Contact = () => {
           href="mailto:makmalthoriq31@gmail.com"
           className="group flex flex-col items-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:scale-105 transition-transform duration-300 shadow-lg"
         >
-          <Mail className="w-10 h-10 text-white-400 group-hover:scale-110 transition-transform duration-300" />
+          <Mail className="w-10 h-10 text-white group-hover:scale-110 transition-transform duration-300" />
           <span className="mt-4 text-white font-semibold">
             makmalthoriq31@gmail.com
           </span>
@@ -71,16 +71,14 @@ const Contact = () => {
           </p>
         </a>
         <a
-          href="https://github.com/makmalt"
+          href="https://instagram.com/makmalt_"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex flex-col items-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:scale-105 transition-transform duration-300 shadow-lg"
         >
           <Instagram className="w-10 h-10 text-red-500 group-hover:scale-110 transition-transform duration-300" />
-          <span className="mt-4 text-white font-semibold">@makmalt</span>
-          <p className="text-slate-300 text-sm mt-1">
-            Follow me on Instagram
-          </p>
+          <span className="mt-4 text-white font-semibold">@makmalt_</span>
+          <p className="text-slate-300 text-sm mt-1">Follow me on Instagram</p>
         </a>
       </div>
     </section>
