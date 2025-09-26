@@ -4,10 +4,13 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black
+  @apply bg-black;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
+.active::after {
+  width: 100% !important;
+}

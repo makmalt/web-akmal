@@ -2,7 +2,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { NavbarLink } from "flowbite-react";
 
-export default function NavbarLinkScroll({ to, children }) {
+export default function NavbarLinkScroll({ to, children, className = "" }) {
   return (
     <NavbarLink
       as={ScrollLink}
@@ -11,8 +11,8 @@ export default function NavbarLinkScroll({ to, children }) {
       offset={-80}
       duration={500}
       spy={true}
-      activeClass="dark:text-white text-white underline font-bold"
-      className="dark:text-gray-200 text-gray-200 text-lg lg:text-xl cursor-pointer font-mono"
+      activeClass="active"
+      className={`dark:text-gray-200 text-gray-200 text-lg lg:text-xl cursor-pointer font-mono ${className}`}
     >
       {children}
     </NavbarLink>

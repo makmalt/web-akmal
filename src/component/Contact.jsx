@@ -1,9 +1,9 @@
-import { Mail, Phone, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Instagram } from "lucide-react";
 import BlurText from "../elements/BlurText";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col text-center justify-center items-center md:mb-20 mt-10">
+    <section className="flex flex-col text-center justify-center items-center md:mb-20 mt-20">
       {/* Judul Section */}
       <BlurText
         text="Contact"
@@ -44,7 +44,7 @@ const Contact = () => {
           <p className="text-slate-300 text-sm mt-1">Chat me on WhatsApp</p>
         </a>
 
-        {/* Instagram */}
+        {/* LinkedIn */}
         <a
           href="https://linkedin.com/in/mochammad-akmal-thoriq"
           target="_blank"
@@ -56,6 +56,31 @@ const Contact = () => {
             @mochammad-akmal-thoriq
           </span>
           <p className="text-slate-300 text-sm mt-1">Follow my journey</p>
+        </a>
+        {/*instagram*/}
+        <a
+          href="https://github.com/makmalt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col items-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:scale-105 transition-transform duration-300 shadow-lg"
+        >
+          <Github className="w-10 h-10 text-gray-500 group-hover:scale-110 transition-transform duration-300" />
+          <span className="mt-4 text-white font-semibold">@makmalt</span>
+          <p className="text-slate-300 text-sm mt-1">
+            Check out my projects on GitHub
+          </p>
+        </a>
+        <a
+          href="https://github.com/makmalt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col items-center p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 hover:scale-105 transition-transform duration-300 shadow-lg"
+        >
+          <Instagram className="w-10 h-10 text-red-500 group-hover:scale-110 transition-transform duration-300" />
+          <span className="mt-4 text-white font-semibold">@makmalt</span>
+          <p className="text-slate-300 text-sm mt-1">
+            Follow me on Instagram
+          </p>
         </a>
       </div>
     </section>
