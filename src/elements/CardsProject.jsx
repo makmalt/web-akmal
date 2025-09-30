@@ -67,6 +67,11 @@ const iconMap1 = {
       <Icon icon="logos:firebase-icon" className="w-11 h-11" />
     </span>
   ),
+  Next: (
+    <span title="NextJS">
+      <Icon icon="logos:nextjs-icon" className="w-11 h-11" />
+    </span>
+  ),
 };
 const iconMap2 = {
   React: <Icon icon="logos:react" className="w-8 h-8" />,
@@ -81,6 +86,7 @@ const iconMap2 = {
   Flutter: <Icon icon="logos:flutter" className="w-8 h-8" />,
   Kotlin: <Icon icon="logos:kotlin-icon" className="w-8 h-8" />,
   Firebase: <Icon icon="logos:firebase-icon" className="w-8 h-8" />,
+  Next: <Icon icon="logos:nextjs-icon" className="w-8 h-8" />,
 };
 
 const CardsProject = ({ image, title, description, link, techstack }) => {
@@ -93,7 +99,7 @@ const CardsProject = ({ image, title, description, link, techstack }) => {
 
       {/* Content */}
       <div className="p-4 flex flex-col gap-2">
-        <h5 className="text-xl font-semiboldtext-white">
+        <h5 className="text-xl font-semibold text-white">
           {title}
         </h5>
         <div className="w-full h-1/3">

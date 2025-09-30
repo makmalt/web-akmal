@@ -10,7 +10,7 @@ export default function NavbarComponent() {
   return (
     <Navbar
       rounded
-      className="bg-slate-900 dark:bg-slate-900 sticky top-0 z-50 mb-5 lg:mb-0 text-white"
+      className="bg-slate-900 dark:bg-slate-900 sticky top-0 z-50 mb-5 lg:mb-0 text-white border-b rounded-2xl"
     >
       <NavbarBrand href="#">
         <span className="flex text-2xl p-2.5 font-semibold text-white font-mono">
@@ -28,7 +28,8 @@ export default function NavbarComponent() {
     after:w-0 after:h-[2px] 
     after:bg-white 
     after:transition-all after:duration-300 
-    hover:after:w-full"
+    hover:after:w-full
+    w-full"
         >
           About
         </NavbarLinkScroll>
@@ -39,7 +40,8 @@ export default function NavbarComponent() {
     after:w-0 after:h-[2px] 
     after:bg-white 
     after:transition-all after:duration-300 
-    hover:after:w-full"
+    hover:after:w-full
+    w-full"
         >
           Portfolio
         </NavbarLinkScroll>
@@ -49,8 +51,9 @@ export default function NavbarComponent() {
     after:content-[''] after:block 
     after:w-0 after:h-[2px] 
     after:bg-white 
-    after:transition-all after:duration-300 
-    hover:after:w-full"
+    after:transition-all after:duration-250 sm:after:duration-300 
+    hover:after:w-full
+    w-full"
         >
           Contact
         </NavbarLinkScroll>
