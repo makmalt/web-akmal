@@ -115,7 +115,7 @@ function PixelTransition({
         rounded-[15px]
         border-2
         border-white
-        w-[200px]
+        w-[150px]
         max-w-full
         relative
         overflow-hidden
