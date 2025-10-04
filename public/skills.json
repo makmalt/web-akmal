@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "title": "ReactJs"
+    },
+    {
+        "id": 2,
+        "name": ".NET",
+        "title": ".NET"
+    },
+    
+    {
+        "id": 3,
+        "name": "MySQL",
+        "title": "MySQL"
+    },
+    {
+        "id": 4,
+        "name": "Bootstrap",
+        "title": "Bootstrap"
+    },
+    {
+        "id": 5,
+        "name": "Astro",
+        "title": "Astro"
+    },
+    {
+        "id": 6,
+        "name": "Alpine",
+        "title": "Alpine"
+    },
+    {
+        "id": 7,
+        "name": "SqlServer",
+        "title": "SqlServer"
+    },
+    {
+        "id": 8,
+        "name": "Flutter",
+        "title": "Flutter"
+    },
+    {
+        "id": 9,
+        "name": "Kotlin",
+        "title": "Kotlin"
+    },
+    {
+        "id": 10,
+        "name": "Firebase",
+        "title": "Firebase"
+    },
+    {
+        "id":11,
+        "name": "Next",
+        "title": "Next"
+    },
+    {
+        "id": 12,
+        "name": "Tailwind",
+        "title": "Tailwind"
+    },
+    {
+        "id": 13,
+        "name": "Laravel",
+        "title": "Laravel"
+    }
+]
