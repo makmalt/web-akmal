@@ -109,7 +109,7 @@ const IsiBio = () => {
           <br />
           <div className="flex gap-10">
             <a
-              className="text-white dark:text-white link text-2xl lg:mb-0"
+              className="text-black dark:text-black link text-lg lg:mb-0 border-0 bg-slate-50 hover:bg-slate-100 hover:text-blue-300 p-3 rounded-full"
               href="Cv.pdf"
               download
             >
@@ -120,14 +120,14 @@ const IsiBio = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsGithub className="w-7 h-7 mt-1"></BsGithub>
+              <BsGithub className="w-7 h-7 mt-3 text-white"></BsGithub>
             </a>
             <a
               href="https://www.linkedin.com/in/mochammad-akmal-thoriq/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsLinkedin className="w-7 h-7 mt-1"></BsLinkedin>
+              <BsLinkedin className="w-7 h-7 mt-3 text-white"></BsLinkedin>
             </a>
           </div>
         </div>
